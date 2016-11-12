@@ -1,0 +1,47 @@
+body{
+	background-color: #61122f;
+	color: #fff;
+}
+
+#header-navbar{
+	background-color: #ffdd33;
+	border: 0px;
+	border-radius: 0px;
+}
+
+#merci{
+	background-color: lightgreen;
+}
+
+#hauteur{
+	height: 100px;
+}
+.navbar-brand h1{	
+	color: blue;
+	line-height: .75;
+}
+
+.navbar-brand a:hover, a:focus {
+	text-decoration: none;
+}
+
+#nav-list{
+	text-align: center;
+}
+
+#nav-list a:hover{
+	background: lightgray;
+}
+#nav-list a span{
+	font-size: 1.5em;
+	color: blue;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid green;
+}
+
+#paragraphe{
+	background-color: green;
+	padding: 10px;
+}
