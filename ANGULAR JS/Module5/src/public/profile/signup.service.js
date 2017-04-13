@@ -20,8 +20,8 @@ function signupService($http){
 		.then(function(response){
 			service.rep = response.data;
 
-		})
-	}
+		});
+	};
 	
 }
 

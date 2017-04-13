@@ -21,13 +21,6 @@ function signupController(signupService){
 		promise.then(function(success){
 			ctrl.affiche = true;
 			signupService.affiche = true;
-			if (ctrl.favorite.length >2){
-				ctrl.favoriteShort = ctrl.favorite.slice(0,2)
-			}
-			else {
-				ctrl.favoriteShort = ctrl.favorite.slice(0,1)
-			};
-
 
 			signupService.infos = {
 				first_name : ctrl.firstName,
@@ -35,11 +28,12 @@ function signupController(signupService){
 				email : ctrl.email,
 				phone : ctrl.phone,
 				favorite : ctrl.favorite,
-				favoriteShort : ctrl.favoriteShort,
-				rep : signupService.rep
+				favoriteShort : signupService.rep.category_short_name,
+				rep : signupService.rep,
+				menuFilter : ctrl.favorite[1]
 			};
-			// signupService.infos = signupService.getItem(ctrl.phone);
 			console.log("signupService.infos = ",signupService.infos);
+			console.log("signupService.rep", signupService.rep);
 		},function(error){
 			ctrl.errorMessage = "No such menu number exists";
 		});
